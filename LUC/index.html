@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Form Đăng Nhập</title>
+
+    <style>
+        body{
+            width: 100%;
+            height:100vh;
+            background-image: linear-gradient(to right,#ff4988,#ffc781);
+            display: flex;
+            align-items: center;
+            font-family: sans-serif;
+            justify-content: center;
+        }
+        .signup{
+            width: 100%;
+            max-width: 500px;
+                background-color: white;
+                border-radius: 10px;
+                padding: 55px 35px;
+                box-shadow: 0 0 10px #aeaaaa;
+        }
+        .signup__heading{
+            text-align: center;
+            font-size: 40px; 
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .signup__already{
+            text-align: center;
+            font-size:16px;
+            margin-bottom: 35px;       
+        }
+        .signup__link{
+            color: #00aefd;
+            font-size: inherit;
+            
+        }
+        .singup__link--underline{
+            text-decoration: underline;
+        }
+        .form__group{
+            margin-bottom: 15px;
+        }
+        .form__group--2{
+            display: flex;
+            justify-content: space-between;
+        }
+        .form__input{
+            color:black;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            outline: none;
+            border: 1px solid transparent;
+            background-color: #eee;
+            border: 1px solid #eee;
+            transition: .25s linear;
+            width: 100%;
+        }
+        .form__input:focus{
+            background-color: #fff;
+        }
+        .form__input--fix{
+            margin-left: 5px;
+            margin-right: -30px;
+        }
+        .form__input::-webkit-input-placeholder{
+           color:#ccc;
+           font-style:italic;
+
+        }
+        .form__submit{
+            font-family: sans-serif;
+            width: 500px;
+            padding:15px;
+            font-size: 16px;
+            border-radius: 5px;
+            background: #00aefd;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="signup">
+        <h2 class="signup__heading">Create Account</h2>
+        <p class="signup__already">Already have an account? <a href="#" class="signup__link singup__link--underline"> Sign In</a></p>
+        <form action="#" class="signup__form">
+            <div style="margin-right:35px" class="form__group">
+                <input type="text" class="form__input" placeholder="Midname">
+                </div>
+            <div style="margin-right:35px" class="form__group form__group--2">
+                <input type="text" class="form__input" placeholder="Firstname">
+                <input type="text" class="form__input form__input--fix" placeholder="Lastname">
+            </div>
+            <div style="margin-right:35px" class="form__group">
+                <input type="emai" class="form__input" placeholder="Email">
+            </div>
+            <div class="form__group">
+                <button class="form__submit" type="submit">
+                    Sign Up
+                </button>
+            </div>
+
+            <div class="form__tos">
+                <input type="checkbox" name="" id="tos">
+                <label for="tos">I have read and agree to the <a href="#" class="signup__link">Term of Services</a></label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
